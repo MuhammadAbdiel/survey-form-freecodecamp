@@ -1,0 +1,68 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Terima kasih telah menyempatkan waktunya untuk membantu kami</p>
+    </header>
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            Nama
+            <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+        </label>
+        <label for="email" id="email-label">
+            Email
+            <input type="email" id="email" placeholder="Masukkan email Anda" required>
+        </label>
+        <label for="number" id="number-label">
+            Umur
+            <input type="number" id="number" required placeholder="Masukkan umur Anda" min="10" max="35">
+        </label>
+        <label for="dropdown" id="dropdown-label">
+            Apa saja impianmu?
+            <select type="dropdown" id="dropdown" required>
+                <option value="Programmer">Programmer</option>
+                <option value="Youtuber">Youtuber</option>
+                <option value="Investor">Investor</option>
+                <option value="Entrepreneur">Entrepreneur</option>
+            </select>
+        </label>
+        <label for="radio">
+            <p>Apakah kamu sering belajar Pemrograman di Internet?</p>
+        </label>
+        <br>
+        <input type="radio" name="radio" value="sering">Sering <br>
+        <input type="radio" name="radio" value="kadang-kadang">Kadang - kadang
+
+        <label for="checkbox">
+            <p>Apa skill yang kamu kuasai?</p>
+        </label>
+        <br>
+        <input type="checkbox" value="Front-End Development">Front-End Development <br>
+        <input type="checkbox" value="Back-End Development">Back-End Development <br>
+        <input type="checkbox" value="Mobile Development">Mobile Development <br>
+        <input type="checkbox" value="Cross-Platform Development">Cross-Platform Development
+        <label for="textarea">
+            <br>
+            Berikan komentar Anda
+            <textarea name="textarea" placeholder="Masukkan komentar Anda disini" id="textarea"></textarea>
+        </label>
+        <br>
+        <label for="submit" id="submit-label">
+            <input type="submit" id="submit" value="Submit">
+        </label>
+    </form>
+</body>
+
+</html>
